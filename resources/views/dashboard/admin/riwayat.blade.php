@@ -39,7 +39,7 @@
                     <td>
                         @if($riwayat->aktif ==0)
                             <div class="rounded p-2 bg-warning border border-warning d-flex justify-content-center">
-                                <p>Belum berlangsumg</p>
+                                <p>Belum berlangsung</p>
                             </div>
                             @endif
                             @if($riwayat->aktif ==1)
@@ -58,7 +58,7 @@
                             @csrf
                             <select name="status" id="status" class="">
                                 <option value="belum-berlangsung">Belum Berlangsung</option>
-                                <option value="berlangsung">Berlansung</option>
+                                <option value="berlangsung">Berlangsung</option>
                                 <option value="selesai">Selesai</option>
                             </select>
                             <button class="btn btn-primary mx-2">Submit</button>

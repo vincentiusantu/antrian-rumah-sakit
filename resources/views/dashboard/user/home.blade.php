@@ -17,26 +17,25 @@
     <div class="container mt-4">
         <h1>Hi {{ Auth::guard('web')->user()->name }}</h1>
         <p>Semoga kamu selalu dalam keadaan yang baik</p>
-        <div class="box-list mt-4">
+        <div class="box-list mt-5">
             <div class="row1 d-flex justify-content-evenly">
                 <a href="{{route('user.daftar')}}" class="text-decoration-none text-black">
-                <div id="pendaftaran" class="rounded p-4 bg-primary-subtle border border-primary-subtle">
+                <div id="pendaftaran" class="rounded p-4 bg-primary-subtle border border-primary-subtle" style="width: 200px">
                         <b>Pendaftaran</b>
                         <br>
                         <p>Daftarkan Sekarang</p>
+                        <br>
                     </div>
                 </a>
                 <a href="{{route('user.jadwal-dokter')}}" class="text-decoration-none text-black">
-                <div id="jadwal-dokter" class="rounded p-4 bg-warning-subtle border border-warning-subtle">
+                <div id="jadwal-dokter" class="rounded p-4 bg-warning-subtle border border-warning-subtle" style="width: 200px">
                         <b>Jadwal Dokter</b>
                         <br>
                         <p>Temukan dokter atau spesialis</p>
                     </div>
                 </a>
-            </div>
-            <div class="row2 d-flex justify-content-center mt-4">
                 <a href="{{route('user.poliklinik')}}" class="text-decoration-none text-black">
-                <div id="poliklinik" class="rounded p-4 bg-success-subtle border border-success-subtle">
+                <div id="poliklinik" class="rounded p-4 bg-success-subtle border border-success-subtle" style="width: 200px">
                         <b>Poliklinik</b>
                         <br>
                         <p>Cari poliklinik sekarang</p>
@@ -44,7 +43,7 @@
                 </a>
             </div>
             <a href="{{route('user.info')}}" class="text-decoration-none text-black">
-            <div id="info" class="mt-4 rounded p-4 bg-info border border-info">
+            <div id="info" class="mt-5 rounded p-4 bg-info border border-info">
                     <b>Apa saja penyakit berbahaya?</b>
                     <br>
                     <p>Temukan sekarang -></p>
